@@ -5,9 +5,7 @@ import img3 from "../../../assets/images/gallery/IMG_3189.png";
 import img4 from "../../../assets/images/gallery/IMG_3190.png";
 import img5 from "../../../assets/images/gallery/IMG_3191.png";
 import img6 from "../../../assets/images/gallery/IMG_1410.jpg";
-import img7 from "../../../assets/images/gallery/IMG_6978.jpg";
-
-const galleryImages = [img1, img2, img3, img4, img5, img6, img7];
+const galleryImages = [img1, img2, img3, img4, img5, img6];
 
 export function Gallery() {
   return (
