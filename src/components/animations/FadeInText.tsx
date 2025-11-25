@@ -40,7 +40,7 @@ export function FadeInText({ text, className, delay = 0 }: FadeInTextProps) {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", flexWrap: "wrap" }}
+      style={{ overflow: "hidden", display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       variants={container}
       initial="hidden"
       whileInView="visible"

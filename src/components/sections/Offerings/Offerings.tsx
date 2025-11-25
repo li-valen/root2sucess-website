@@ -1,6 +1,6 @@
 import { ScrollReveal } from "../../animations/ScrollReveal";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../../ui/Card";
-import { BookOpen, Trophy, GraduationCap, Brain, Calculator } from "lucide-react";
+import { BookOpen, Trophy, GraduationCap, Brain, Calculator, Users } from "lucide-react";
 
 const offerings = [
   {
@@ -27,6 +27,11 @@ const offerings = [
     title: "Study Strategies",
     description: "Organization, time management, and effective learning habits.",
     icon: Brain,
+  },
+  {
+    title: "Personalized Mentorship",
+    description: "One-on-one guidance from high school mentors who care.",
+    icon: Users,
   },
 ];
 
