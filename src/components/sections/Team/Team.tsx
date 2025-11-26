@@ -31,11 +31,20 @@ export function Team() {
           <ScrollReveal delay={0.05}>
             <div className="p-6 bg-background rounded-lg shadow-sm">
               <h3 className="font-semibold text-xl mb-3">Curriculum</h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Create weekly lesson plans used in mentoring sessions, tailored for either 5-6th grade or 7-8th grade.
-              </p>
+              <p className="text-sm text-muted-foreground mb-2 font-medium">Example of topics:</p>
+              <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
+                <li>Trigonometry</li>
+                <li>Geometry</li>
+                <li>3D Geometry</li>
+                <li>Introduction to Proofs</li>
+                <li>Polynomial factoring</li>
+                <li>Graphing equations</li>
+                <li>Determining equations</li>
+                <li>Solving for unknowns</li>
+                <li>Logical Reasoning</li>
+              </ul>
 
-              <div className="mb-3 font-medium">Commitment</div>
+              <div className="mt-4 mb-3 font-medium">Commitment</div>
               <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
                 <li>1 weekly team session: Time TBD</li>
               </ul>
