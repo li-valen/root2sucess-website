@@ -3,8 +3,10 @@ import { Footer } from "../components/layout/Footer";
 import { Hero } from "../components/sections/Hero/Hero";
 import { WhoWeAre } from "../components/sections/WhoWeAre/WhoWeAre";
 import { Offerings } from "../components/sections/Offerings/Offerings";
+import { Schedule } from "../components/sections/Schedule/Schedule";
 import { Results } from "../components/sections/Results/Results";
 import { Schools } from "../components/sections/Schools/Schools";
+import { Contact } from "../components/sections/Contact/Contact";
 import { Gallery } from "../components/sections/Gallery/Gallery";
 import { Signup } from "../components/sections/Signup/Signup";
 import { AnimatedPageContainer } from "../components/layout/AnimatedPageContainer";
@@ -17,10 +19,12 @@ export function Home() {
         <Hero />
         <WhoWeAre />
         <Offerings />
+        <Schedule />
         <Results />
         <Schools />
         <Gallery />
         <Signup />
+        <Contact />
       </main>
       <Footer />
     </AnimatedPageContainer>
