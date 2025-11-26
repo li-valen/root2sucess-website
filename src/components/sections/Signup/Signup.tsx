@@ -42,15 +42,15 @@ export function Signup() {
           <ScrollReveal delay={0.2}>
             <Card className="h-full text-center hover:border-primary transition-colors">
               <CardHeader>
-                <CardTitle>Become a Tutor</CardTitle>
-                <CardDescription>For high school students wanting to teach.</CardDescription>
+                <CardTitle>Join Our Team</CardTitle>
+                <CardDescription>Opportunities for tutors, curriculum creators, media makers, and volunteers.</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="mb-6 text-sm text-muted-foreground">
-                  Gain leadership experience, earn service hours, and make a difference in your community.
+                  Gain leadership experience, contribute curriculum or media, earn service hours, and help students thrive.
                 </p>
                 <Button variant="outline" className="w-full" onClick={() => setIsTutorModalOpen(true)}>
-                  Tutor Signup
+                  Join The Team
                 </Button>
               </CardContent>
             </Card>
@@ -86,7 +86,7 @@ export function Signup() {
         </form>
       </Modal>
 
-      <Modal isOpen={isTutorModalOpen} onClose={() => setIsTutorModalOpen(false)} title="Tutor Application">
+      <Modal isOpen={isTutorModalOpen} onClose={() => setIsTutorModalOpen(false)} title="Join Our Team">
         <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
@@ -103,12 +103,18 @@ export function Signup() {
             <Input type="email" placeholder="john@example.com" />
           </div>
           <div className="space-y-2">
-            <label className="text-sm font-medium">Subject Expertise</label>
-            <Input placeholder="e.g. Calculus, Physics" />
+            <label className="text-sm font-medium">Role You're Interested In</label>
+            <select className="w-full rounded-md border p-2 text-sm">
+              <option>Tutor</option>
+              <option>Curriculum Creator</option>
+              <option>Media / Design</option>
+              <option>Volunteer Coordinator</option>
+              <option>Other</option>
+            </select>
           </div>
           <div className="space-y-2">
-            <label className="text-sm font-medium">Experience (Years)</label>
-            <Input type="number" placeholder="0" />
+            <label className="text-sm font-medium">Relevant Experience / Portfolio Link</label>
+            <Input placeholder="Optional: link to portfolio or brief summary" />
           </div>
           <Button type="submit" className="w-full">Submit Application</Button>
         </form>
