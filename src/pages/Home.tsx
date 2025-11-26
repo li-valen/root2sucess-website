@@ -5,6 +5,7 @@ import { WhoWeAre } from "../components/sections/WhoWeAre/WhoWeAre";
 import { Offerings } from "../components/sections/Offerings/Offerings";
 import { Schedule } from "../components/sections/Schedule/Schedule";
 import { Results } from "../components/sections/Results/Results";
+import { Team } from "../components/sections/Team/Team";
 import { Schools } from "../components/sections/Schools/Schools";
 import { Contact } from "../components/sections/Contact/Contact";
 import { Gallery } from "../components/sections/Gallery/Gallery";
@@ -21,6 +22,7 @@ export function Home() {
         <Offerings />
         <Schedule />
         <Results />
+        <Team />
         <Schools />
         <Gallery />
         <Signup />
