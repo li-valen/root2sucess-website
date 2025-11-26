@@ -19,7 +19,6 @@ export function Home() {
         <WhoWeAre />
         <Offerings />
         <Results />
-        <Contact />
         <Schools />
         <Gallery />
         <Signup />
