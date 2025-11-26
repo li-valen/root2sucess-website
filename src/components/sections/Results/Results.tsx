@@ -16,7 +16,7 @@ export function Results() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Real Progress. Real Confidence.</h2>
             <p className="text-primary-foreground/80 text-lg mb-8">
               Grades improve. Confidence rises. Students find excitement in their own growth.
-              Over the years, Root2Success has had the privilege of guiding students from many backgrounds,
+              Since our founding in February 2022, Root2Success has had the privilege of guiding students from many backgrounds,
               skill levels, and school environments.
             </p>
           </ScrollReveal>

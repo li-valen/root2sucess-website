@@ -40,7 +40,12 @@ export function Footer() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>info@root2success.org</li>
+                <li>
+                  <a href="mailto:info@root2success.org" className="hover:text-primary">info@root2success.org</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/root2successphilly/" target="_blank" rel="noopener noreferrer" className="hover:text-primary">@root2successphilly</a>
+                </li>
                 <li>Philadelphia, PA</li>
               </ul>
             </div>

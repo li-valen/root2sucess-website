@@ -45,6 +45,9 @@ export function Offerings() {
             <p className="text-muted-foreground text-lg">
               Our tutoring programs emphasize clarity, structured explanations, and step-by-step problem-solving.
             </p>
+            <p className="text-muted-foreground text-base mt-4">
+              Meetings are held Mondays and Tuesdays from 5:30–6:30 PM over Zoom for 5th and 6th grade students. For 7th and 8th grade students, meetings are held Thursdays and Fridays from 5:30–6:30 PM over Zoom. Students only need to attend one of the two duplicate meeting days each week, allowing families to choose the most convenient day.
+            </p>
           </div>
         </ScrollReveal>
 

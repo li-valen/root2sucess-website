@@ -12,6 +12,9 @@ export function WhoWeAre() {
               Empowering Students Through Precision, Patience, and Practice
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg">
+              <p className="font-semibold">
+                Providing free enrichment in mathematics to 5-8th grade students across Philadelphia.
+              </p>
               <p>
                 Root2Success isn’t just tutoring. It’s structured support grounded in mentorship and clear strategies.
                 Students come to us frustrated or uncertain; they leave confident, organized, and intellectually curious.
