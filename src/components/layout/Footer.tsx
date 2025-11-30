@@ -33,7 +33,7 @@ export function Footer() {
               <h4 className="font-semibold mb-4">Community</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#signup" onClick={(e) => scrollToSection(e, "#signup")} className="hover:text-primary">Student Signup</a></li>
-                <li><a href="#signup" onClick={(e) => scrollToSection(e, "#signup")} className="hover:text-primary">Tutor Signup</a></li>
+                <li><a href="https://forms.gle/r6HAEFGRyhLw8Ce46" target="_blank" rel="noopener noreferrer" className="hover:text-primary">Tutor Signup</a></li>
                 <li><a href="#" className="hover:text-primary">Events</a></li>
               </ul>
             </div>
@@ -45,6 +45,9 @@ export function Footer() {
                 </li>
                 <li>
                   <a href="https://www.instagram.com/root2successphilly/" target="_blank" rel="noopener noreferrer" className="hover:text-primary">@root2successphilly</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/root2success-philly" target="_blank" rel="noopener noreferrer" className="hover:text-primary">linkedin.com/company/root2success-philly</a>
                 </li>
                 <li>Philadelphia, PA</li>
               </ul>

@@ -60,7 +60,7 @@ export function Team() {
 
               <div className="mb-3 font-medium">Commitment</div>
               <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
-                <li>1 weekly team session: Time TBD</li>
+                <li>1 weekly team session: Monday 8:00 PM</li>
               </ul>
             </div>
           </ScrollReveal>
@@ -90,6 +90,16 @@ export function Team() {
             <p>
               Team members are required to attend all respective meetings. Please keep this in consideration as you select your team preference. A failure to maintain attendance may result in removal from the program.
             </p>
+            <div className="mt-6">
+              <a
+                href="https://forms.gle/r6HAEFGRyhLw8Ce46"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:opacity-95"
+              >
+                Apply to Join the Team
+              </a>
+            </div>
           </div>
         </ScrollReveal>
       </div>

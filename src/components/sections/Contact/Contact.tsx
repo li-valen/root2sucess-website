@@ -17,6 +17,14 @@ export function Contact() {
               </div>
             </div>
             <div className="text-sm">
+              <div className="font-medium">LinkedIn</div>
+              <div className="text-muted-foreground">
+                <a href="https://www.linkedin.com/company/root2success-philly" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                  linkedin.com/company/root2success-philly
+                </a>
+              </div>
+            </div>
+            <div className="text-sm">
               <div className="font-medium">Email</div>
               <div className="text-muted-foreground">info@root2success.org</div>
             </div>

@@ -7,7 +7,6 @@ import { Modal } from "../../ui/Modal";
 
 export function Signup() {
   const [isStudentModalOpen, setIsStudentModalOpen] = useState(false);
-  const [isTutorModalOpen, setIsTutorModalOpen] = useState(false);
 
   return (
     <section id="signup" className="py-24 bg-background">
@@ -49,9 +48,11 @@ export function Signup() {
                 <p className="mb-6 text-sm text-muted-foreground">
                   Gain leadership experience, contribute curriculum or media, earn service hours, and help students thrive.
                 </p>
-                <Button variant="outline" className="w-full" onClick={() => setIsTutorModalOpen(true)}>
-                  Join The Team
-                </Button>
+                <a href="https://forms.gle/r6HAEFGRyhLw8Ce46" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center">
+                  <Button variant="outline" className="w-full">
+                    Join The Team
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </ScrollReveal>
@@ -86,39 +87,7 @@ export function Signup() {
         </form>
       </Modal>
 
-      <Modal isOpen={isTutorModalOpen} onClose={() => setIsTutorModalOpen(false)} title="Join Our Team">
-        <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="text-sm font-medium">First Name</label>
-              <Input placeholder="John" />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-medium">Last Name</label>
-              <Input placeholder="Smith" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Email</label>
-            <Input type="email" placeholder="john@example.com" />
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Role You're Interested In</label>
-            <select className="w-full rounded-md border p-2 text-sm">
-              <option>Tutor</option>
-              <option>Curriculum Creator</option>
-              <option>Media / Design</option>
-              <option>Volunteer Coordinator</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Relevant Experience / Portfolio Link</label>
-            <Input placeholder="Optional: link to portfolio or brief summary" />
-          </div>
-          <Button type="submit" className="w-full">Submit Application</Button>
-        </form>
-      </Modal>
+      {/* Team signup now uses external Google Form; modal removed. */}
     </section>
   );
 }
