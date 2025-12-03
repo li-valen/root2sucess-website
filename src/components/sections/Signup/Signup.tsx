@@ -1,13 +1,8 @@
-import { useState } from "react";
 import { ScrollReveal } from "../../animations/ScrollReveal";
 import { Button } from "../../ui/Button";
-import { Input } from "../../ui/Input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../../ui/Card";
-import { Modal } from "../../ui/Modal";
 
 export function Signup() {
-  const [isStudentModalOpen, setIsStudentModalOpen] = useState(false);
-
   return (
     <section id="signup" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -31,9 +26,11 @@ export function Signup() {
                 <p className="mb-6 text-sm text-muted-foreground">
                   Join our weekly sessions, access one-on-one tutoring, and participate in competitions.
                 </p>
-                <Button className="w-full" onClick={() => setIsStudentModalOpen(true)}>
-                  Student Signup
-                </Button>
+                <a href="https://forms.gle/L7tg7tMgB7FneBhq6" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center">
+                  <Button className="w-full">
+                    Student Signup
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </ScrollReveal>
@@ -58,36 +55,6 @@ export function Signup() {
           </ScrollReveal>
         </div>
       </div>
-
-      <Modal isOpen={isStudentModalOpen} onClose={() => setIsStudentModalOpen(false)} title="Student Registration">
-        <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="text-sm font-medium">First Name</label>
-              <Input placeholder="Jane" />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-medium">Last Name</label>
-              <Input placeholder="Doe" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Email</label>
-            <Input type="email" placeholder="jane@example.com" />
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Grade Level</label>
-            <Input placeholder="e.g. 7th Grade" />
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Subjects of Interest</label>
-            <Input placeholder="e.g. Algebra, Geometry" />
-          </div>
-          <Button type="submit" className="w-full">Submit Application</Button>
-        </form>
-      </Modal>
-
-      {/* Team signup now uses external Google Form; modal removed. */}
     </section>
   );
 }
